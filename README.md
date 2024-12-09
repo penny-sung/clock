@@ -54,13 +54,14 @@
 
 ## 技術規劃  
 
-| 功能            | 需求技術          | 說明                          |
-|-----------------|------------|-------------------|---------------------------------|
+| 功能           | 需求技術          | 說明                          |
+|-----------------|-------------------|---------------------------------|
 | 時鐘            | QTimer, QLabel     | 12/24 小時顯示與切換，時鐘秒秒更新 |
 | 計時器          | QTimer, QPushButton | 啟動、暫停與重設計時功能         |
 | 鬧鐘            | QTimer, QMediaPlayer, QDateTimeEdit | 支援多鬧鐘，並可自訂鈴聲           |
 | 資料儲存        | QFile, QJsonDocument | 使用 JSON 格式保存鬧鐘的設定      |
-| GUI 界面       | Qt Designer | 設計 GUI 介面，支援使用者操作     |
+| GUI 界面       | Qt Designer, PyQt5  | 設計 GUI 介面，支援使用者操作     |
+
 
 ## 操作說明  
 
@@ -81,3 +82,5 @@
 ## 參考文獻
  - https://steam.oxxostudio.tw/category/python/pyqt5/qtimer.html
  - https://medium.com/bucketing/pyside2-tutorial-ch17-qtimeedit-qlcdnumber-analogclock-customize-ui-9951d101cbaa
+
+
