@@ -78,7 +78,6 @@
    - 使用者可在此頁面編輯、刪除鬧鐘，並上傳自訂的鈴聲作為提示音。  
 
 ---
-## 貢獻者  
-
-- 組員：50915113 宋沛玲  
-- 指導老師：林易泉  
+## 參考文獻
+https://steam.oxxostudio.tw/category/python/pyqt5/qtimer.html
+https://medium.com/bucketing/pyside2-tutorial-ch17-qtimeedit-qlcdnumber-analogclock-customize-ui-9951d101cbaa
