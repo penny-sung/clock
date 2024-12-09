@@ -54,13 +54,13 @@
 
 ## 技術規劃  
 
-| 功能           | 開發時間    | 需求技術          | 說明                          |
+| 功能            | 需求技術          | 說明                          |
 |-----------------|------------|-------------------|---------------------------------|
-| 時鐘            | 2 週       | QTimer, QLabel     | 12/24 小時顯示與切換，時鐘秒秒更新 |
-| 計時器          | 2 週       | QTimer, QPushButton | 啟動、暫停與重設計時功能         |
-| 鬧鐘            | 3 週       | QTimer, QMediaPlayer, QDateTimeEdit | 支援多鬧鐘，並可自訂鈴聲           |
-| 資料儲存        | 1 週       | QFile, QJsonDocument | 使用 JSON 格式保存鬧鐘的設定      |
-| GUI 界面       | 3 週       | Qt Designer | 設計 GUI 介面，支援使用者操作     |
+| 時鐘            | QTimer, QLabel     | 12/24 小時顯示與切換，時鐘秒秒更新 |
+| 計時器          | QTimer, QPushButton | 啟動、暫停與重設計時功能         |
+| 鬧鐘            | QTimer, QMediaPlayer, QDateTimeEdit | 支援多鬧鐘，並可自訂鈴聲           |
+| 資料儲存        | QFile, QJsonDocument | 使用 JSON 格式保存鬧鐘的設定      |
+| GUI 界面       | Qt Designer | 設計 GUI 介面，支援使用者操作     |
 
 ## 操作說明  
 
