@@ -79,5 +79,5 @@
 
 ---
 ## 參考文獻
-**https://steam.oxxostudio.tw/category/python/pyqt5/qtimer.html
-**https://medium.com/bucketing/pyside2-tutorial-ch17-qtimeedit-qlcdnumber-analogclock-customize-ui-9951d101cbaa
+ - https://steam.oxxostudio.tw/category/python/pyqt5/qtimer.html
+ - https://medium.com/bucketing/pyside2-tutorial-ch17-qtimeedit-qlcdnumber-analogclock-customize-ui-9951d101cbaa
