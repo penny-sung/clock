@@ -1,0 +1,22 @@
+[
+    {
+        "music": "C:/qt_hw/clock-management-system/resources/《ハレハレヤ (朗朗晴天)》貓瑾醒了嗎.mp3",
+        "repeat": true,
+        "time": "20:12"
+    },
+    {
+        "music": "C:/qt_hw/clock-management-system/resources/《ハレハレヤ (朗朗晴天)》貓瑾醒了嗎.mp3",
+        "repeat": false,
+        "time": "23:13"
+    },
+    {
+        "music": "C:/qt_hw/clock-management-system/resources/《ハレハレヤ (朗朗晴天)》貓瑾醒了嗎.mp3",
+        "repeat": false,
+        "time": "23:14"
+    },
+    {
+        "music": "C:/qt_hw/clock-management-system/resources/《ハレハレヤ (朗朗晴天)》貓瑾醒了嗎.mp3",
+        "repeat": true,
+        "time": "23:55"
+    }
+]

@@ -1,0 +1,11 @@
+release/alarmwidget.o
+release/clockwidget.o
+release/main.o
+release/clocksystem.o
+release/systemmonitor.o
+release/timerwidget.o
+release/moc_alarmwidget.o
+release/moc_clocksystem.o
+release/moc_clockwidget.o
+release/moc_systemmonitor.o
+release/moc_timerwidget.o

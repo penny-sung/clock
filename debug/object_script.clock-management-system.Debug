@@ -1,0 +1,11 @@
+debug/alarmwidget.o
+debug/clockwidget.o
+debug/main.o
+debug/clocksystem.o
+debug/systemmonitor.o
+debug/timerwidget.o
+debug/moc_alarmwidget.o
+debug/moc_clocksystem.o
+debug/moc_clockwidget.o
+debug/moc_systemmonitor.o
+debug/moc_timerwidget.o
