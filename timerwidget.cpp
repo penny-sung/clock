@@ -2,7 +2,7 @@
 
 TimerWidget::TimerWidget(QWidget *parent)
     : QWidget(parent), isPaused(false) {
-    // 设置布局
+    // 設置布局
     QVBoxLayout *layout = new QVBoxLayout(this);
     timeLabel = new QLabel("00:00:00.000", this);
     QPushButton *startButton = new QPushButton("Start Timer", this);
@@ -11,7 +11,7 @@ TimerWidget::TimerWidget(QWidget *parent)
     clearLogBtn = new QPushButton("Clear Log", this); // 創建清空日誌按鈕
     logViewer = new QTextEdit(this);
 
-    logViewer->setReadOnly(true); // 日誌只讀
+    logViewer->setReadOnly(true); 
 
     layout->addWidget(timeLabel);
     layout->addWidget(startButton);
