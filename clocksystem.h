@@ -27,22 +27,19 @@ private:
     QTimer *timer;
     QTime currentTime;
 
-    // 四個按鈕
     QPushButton *button12CPU;
     QPushButton *button24CPU;
     QPushButton *button12Analog;
     QPushButton *buttonAnalogCPU;
 
-    // 標籤用於顯示電子時鐘與CPU記憶體功耗
     QLabel *clockLabel;
     QLabel *cpuLabel;
 
-    // 狀態標誌
     bool showAnalog;
     bool showCPUInfo;
     bool use24HourFormat;
 
-    void displayCPUAndMemoryUsage(); // 模擬 CPU 和記憶體功耗
+    void displayCPUAndMemoryUsage(); 
 };
 
 #endif // CLOCKSYSTEM_H
