@@ -36,7 +36,7 @@ private:
     QCheckBox *repeatCheckbox;
     QPushButton *musicButton;
     QPushButton *addButton;
-    QPushButton *deleteButton; // 刪除按鈕
+    QPushButton *deleteButton; 
     QListWidget *alarmList;
 
     QTimer *timer;
@@ -47,4 +47,4 @@ private:
     QString selectedMusic;
 };
 
-#endif // ALARMWIDGET_H
+#endif 
