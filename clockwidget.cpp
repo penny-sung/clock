@@ -5,16 +5,14 @@
 #include <QFontMetrics>
 
 ClockWidget::ClockWidget(QWidget *parent)
-    : QWidget(parent), clockStyle(ANALOG_CLOCK) {  // Initialize clockStyle
+    : QWidget(parent), clockStyle(ANALOG_CLOCK) {  
     setFixedSize(400, 400);
 
-    // update
     QTimer *timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, QOverload<>::of(&ClockWidget::update));
-    timer->start(1000);  // Update every second
+    timer->start(1000);  
 }
 
-//clock style
 void ClockWidget::setClockStyle(ClockStyle style) {
     clockStyle = style;
     update();
