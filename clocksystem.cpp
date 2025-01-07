@@ -12,17 +12,16 @@ clocksystem::clocksystem(QWidget *parent) : QWidget(parent)
 {
     setFixedSize(600, 500);
 
-    // 初始化標誌
+
     showAnalog = false;
     showCPUInfo = false;
     use24HourFormat = false;
 
-    // 設定計時器
+    //計時器
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &clocksystem::updateClock);
     timer->start(1000);
 
-    // 標籤初始化
     clockLabel = new QLabel(this);
     clockLabel->setAlignment(Qt::AlignCenter);
     clockLabel->setStyleSheet("font-size: 24px; color: blue;");
@@ -31,7 +30,6 @@ clocksystem::clocksystem(QWidget *parent) : QWidget(parent)
     cpuLabel->setAlignment(Qt::AlignCenter);
     cpuLabel->setStyleSheet("font-size: 18px; color: green;");
 
-    // 按鈕初始化
     button12CPU = new QPushButton("電子時鐘12小時 + CPU", this);
     button24CPU = new QPushButton("電子時鐘24小時 + CPU", this);
     button12Analog = new QPushButton("電子時鐘12小時 + 指針時鐘", this);
@@ -69,7 +67,6 @@ void clocksystem::updateClock()
 
     clockLabel->setText(timeText);
 
-    // 根據標誌更新CPU資訊
     if (showCPUInfo) {
         displayCPUAndMemoryUsage();
         cpuLabel->show();
@@ -77,13 +74,11 @@ void clocksystem::updateClock()
         cpuLabel->clear();
     }
 
-    // 強制刷新
     update();
 }
 
 void clocksystem::displayCPUAndMemoryUsage()
 {
-    // 初始化性能數據查詢
     static PDH_HQUERY cpuQuery;
     static PDH_HCOUNTER cpuTotal;
     static bool initialized = false;
@@ -104,9 +99,8 @@ void clocksystem::displayCPUAndMemoryUsage()
     MEMORYSTATUSEX memoryStatus;
     memoryStatus.dwLength = sizeof(memoryStatus);
     GlobalMemoryStatusEx(&memoryStatus);
-    qint64 totalMemory = memoryStatus.ullTotalPhys / (1024 * 1024); // 轉換為 MB
-    qint64 usedMemory = (memoryStatus.ullTotalPhys - memoryStatus.ullAvailPhys) / (1024 * 1024); // 轉換為 MB
-    // 更新標籤
+    qint64 totalMemory = memoryStatus.ullTotalPhys / (1024 * 1024); // 轉MB
+    qint64 usedMemory = (memoryStatus.ullTotalPhys - memoryStatus.ullAvailPhys) / (1024 * 1024); // 轉MB
     cpuLabel->setText(QString("CPU: %1% | Memory: %2/%3 MB").arg(cpuUsage, 0, 'f', 2).arg(usedMemory).arg(totalMemory));
 
 }
