@@ -8,7 +8,6 @@ SystemMonitor::SystemMonitor(QWidget *parent) : QWidget(parent) {
 }
 
 void SystemMonitor::updateStatus() {
-    // 示例：取得系統時間
     QProcess process;
     process.start("date");
     process.waitForFinished();
