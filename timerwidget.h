@@ -17,24 +17,24 @@ public:
     explicit TimerWidget(QWidget *parent = nullptr);
 
 private slots:
-    void startTimer();    // 启动或继续定时器
-    void pauseTimer();    // 暂停定时器
-    void stopTimer();     // 停止定时器
-    void updateDisplay(); // 更新时间显示
+    void startTimer();   
+    void pauseTimer();    
+    void stopTimer();     
+    void updateDisplay(); 
     void clearLog();
 
 private:
-    QTimer *timer;          // 定时器对象
-    QLabel *timeLabel;      // 显示时间
-    QPushButton *pauseBtn;  // 暂停按钮
-    QTime elapsedTime;      // 累计时间
-    bool isPaused;          // 暂停状态
-    QTextEdit *logViewer;   // 日志显示
-    QDateTime startTime;    // 开始时间
-    QDateTime stopTime;     // 停止时间
+    QTimer *timer;          
+    QLabel *timeLabel;     
+    QPushButton *pauseBtn;  
+    QTime elapsedTime;      
+    bool isPaused;         
+    QTextEdit *logViewer;   
+    QDateTime startTime;    
+    QDateTime stopTime;    
     QPushButton *clearLogBtn;
 
-    void addLog(const QString &message); // 添加日志
+    void addLog(const QString &message); 
 };
 
-#endif // TIMERWIDGET_H
+#endif 
