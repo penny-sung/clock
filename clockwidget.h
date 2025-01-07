@@ -5,7 +5,6 @@
 #include <QPainter>
 #include <QString>
 
-// ClockWidget Class Declaration
 class ClockWidget : public QWidget {
     Q_OBJECT
 
@@ -19,9 +18,8 @@ protected:
     void paintEvent(QPaintEvent *event) override;
 
 private:
-    ClockStyle clockStyle;  // Declare clockStyle field
+    ClockStyle clockStyle;  
 
-    // Helper functions
     void drawAnalogClock(QPainter &painter);
     void drawDigitalClock(QPainter &painter, const QString &timeString);
     void drawCpuMemoryUsage(QPainter &painter);
@@ -29,4 +27,4 @@ private:
     QString getCpuMemoryUsage();
 };
 
-#endif // CLOCKWIDGET_H
+#endif 
