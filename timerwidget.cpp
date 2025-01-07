@@ -33,7 +33,7 @@ TimerWidget::TimerWidget(QWidget *parent)
     connect(startButton, &QPushButton::clicked, this, &TimerWidget::startTimer);
     connect(pauseBtn, &QPushButton::clicked, this, &TimerWidget::pauseTimer);
     connect(stopButton, &QPushButton::clicked, this, &TimerWidget::stopTimer);
-    connect(clearLogBtn, &QPushButton::clicked, this, &TimerWidget::clearLog); // 连接清空日志按钮
+    connect(clearLogBtn, &QPushButton::clicked, this, &TimerWidget::clearLog); // 連接清空日誌按钮
 }
 
 void TimerWidget::clearLog() {
