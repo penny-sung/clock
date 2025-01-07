@@ -95,7 +95,7 @@ void clocksystem::displayCPUAndMemoryUsage()
     PdhGetFormattedCounterValue(cpuTotal, PDH_FMT_DOUBLE, nullptr, &counterValue);
     double cpuUsage = counterValue.doubleValue;
 
-    // 使用 GlobalMemoryStatusEx 獲取記憶體資訊
+    // GlobalMemoryStatusEx記憶體
     MEMORYSTATUSEX memoryStatus;
     memoryStatus.dwLength = sizeof(memoryStatus);
     GlobalMemoryStatusEx(&memoryStatus);
